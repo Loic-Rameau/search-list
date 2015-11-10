@@ -44,14 +44,25 @@ Example:
     is: 'search-list',
 
     properties: {
-
+      /**
+       * @type String
+       * the input to search in the searchField
+       */
       input: {
         type:String,
         notify: true,
         observer: "inputChanged"
       },
-
+      /**
+       * @type String
+       * The placeholder for the input search
+       */
       placeholder: String,
+      /**
+       * @type String
+       * the data field in camel case. Ex : data-search-field => searchField
+       * @default searchField
+       */
       searchField: {
         type:String,
         value: "searchField"
@@ -86,6 +97,9 @@ Example:
     },
 
     // Element Behavior
+    /**
+     * Called when the input change
+     */
     inputChanged: function(){
       var items = this.querySelectorAll(".item");
       var i;

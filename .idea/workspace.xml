@@ -35,8 +35,8 @@
       <file leaf-file-name="search-list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="-20.26415">
+              <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3384075">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.57796013">
+              <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -439,12 +439,12 @@
       <created>1447143392453</created>
       <option name="number" value="Default" />
       <updated>1447143392453</updated>
-      <workItem from="1447143395127" duration="2042000" />
+      <workItem from="1447143395127" duration="2227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2042000" />
+    <option name="totallyTimeSpent" value="2227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1696" height="1066" extended-state="6" />
@@ -502,16 +502,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search-list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="-20.26415">
+          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3384075">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.57796013">
+          <caret line="29" column="58" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding />
         </state>
       </provider>
