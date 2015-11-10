@@ -1,0 +1,112 @@
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+An element providing a solution to no problem in particular.
+
+Example:
+
+    <search-list></search-list>
+
+@group Seed Elements
+@element search-list
+@demo demo/index.html
+@hero hero.svg
+-->
+<dom-module id="search-list">
+
+  <style>
+    :host {
+      display: block;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <template>
+    <input type="search" results="5" placeholder="{{placeholder}}" name="search" id="search" value="{{input::input}}"/>
+    <content></content>
+  </template>
+
+</dom-module>
+
+<script>
+
+  Polymer({
+
+    is: 'search-list',
+
+    properties: {
+
+      input: {
+        type:String,
+        notify: true,
+        observer: "inputChanged"
+      },
+
+      placeholder: String,
+      searchField: {
+        type:String,
+        value: "searchField"
+      }
+    },
+
+    // Element Lifecycle
+
+    ready: function() {
+      // `ready` is called after all elements have been configured, but
+      // propagates bottom-up. This element's children are ready, but parents
+      // are not.
+      //
+      // This is the point where you should make modifications to the DOM (when
+      // necessary), or kick off any processes the element wants to perform.
+    },
+
+    attached: function() {
+      // `attached` fires once the element and its parents have been inserted
+      // into a document.
+      //
+      // This is a good place to perform any work related to your element's
+      // visual state or active behavior (measuring sizes, beginning animations,
+      // loading resources, etc).
+    },
+
+    detached: function() {
+      // The analog to `attached`, `detached` fires when the element has been
+      // removed from a document.
+      //
+      // Use this to clean up anything you did in `attached`.
+    },
+
+    // Element Behavior
+    inputChanged: function(){
+      var items = this.querySelectorAll(".item");
+      var i;
+      if(this.input) {
+        for (i = 0; i < items.length; i++) {
+          if(items.item(i).dataset[this.searchField])
+            if (items.item(i).dataset[this.searchField].match(new RegExp(".*" + this.input + ".*", "i"))) {
+              items.item(i).classList.add("selected");
+              items.item(i).classList.remove("unselected");
+            } else {
+              items.item(i).classList.add("unselected");
+              items.item(i).classList.remove("selected");
+            }
+        }
+      } else {
+        for (i = 0; i < items.length; i++) {
+          items.item(i).classList.add("selected");
+          items.item(i).classList.remove("unselected");
+        }
+      }
+    }
+  });
+
+</script>
